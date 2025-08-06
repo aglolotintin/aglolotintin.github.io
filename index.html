@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Kristine B. Aleo, a criminology student with hobbies and achievements." />
+  <title>Kristine B. Aleo - Personal Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #34495e;
+      padding: 1rem;
+      z-index: 1000;
+      text-align: right;
+    }
+    nav a {
+      color: #ecf0f1;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+    header {
+      height: 100vh;
+      background: url('https://i.redd.it/j6wk924ulg421.jpg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1, header h2, header p {
+      color: black;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background-color: #fff;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .circle-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1.5rem;
+      display: block;
+    }
+
+    .center-text {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #34495e;
+    }
+
+    .hobby-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .hobby-item {
+      width: 260px;
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .hobby-image {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .hobby-description {
+      font-size: 1rem;
+      color: #34495e;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #2c3e50;
+      color: #fff;
+    }
+
+    .education-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+    }
+
+    .edu-box {
+      position: relative;
+      width: 220px;
+      height: 120px;
+      background-color: #ecf0f1;
+      color: #34495e;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: default;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .edu-box span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #f39c12;
+      color: white;
+      font-weight: normal;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .edu-box:hover span {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1><b>WELCOME TO MY WEBSITE</b></h1>
+    <h2>Kristine B. Aleo</h2>
+    <p>Criminology Student | Explorer | Music Lover | Nature Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <img src="profile_pic.jpeg" alt="Kristine Aleo" class="circle-image">
+    <h2>About Me</h2>
+    <p class="center-text">
+      <i>Hi! I'm <strong>Kristine B. Aleo</strong>, a criminology student with a passion for learning and expanding my knowledge. I am always eager to explore new skills and ideas, especially those that relate to my field of study and personal growth. In my free time, I like to unwind and experience life in different ways, be it through hobbies or outdoor adventures.
+<br><br> 
+<span style="color: black;"><i>"live with courage, walk with pride"</i></span>
+    </p>
+  </section>
+
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="hobby-container">
+      <div class="hobby-item">
+        <img src="music.jpg" alt="Listening to Music" class="hobby-image">
+        <p class="hobby-description"><strong>Listening to Music:</strong> My perfect companion for any mood, especially when I’m studying or relaxing.</p>
+      </div>
+      <div class="hobby-item">
+        <img src="sport.jpg" alt="Playing Batted Balls" class="hobby-image">
+        <p class="hobby-description"><strong>Playing Batted Balls:</strong> A fun, energetic way to connect with friends and let off steam.</p>
+      </div>
+      <div class="hobby-item">
+        <img src="travel.jpg" alt="Exploring Nature" class="hobby-image">
+        <p class="hobby-description"><strong>Exploring Nature:</strong> Hiking gives me a sense of peace, adventure, and physical challenge.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-container">
+      <div class="edu-box">
+        ELEMENTARY
+        <span>
+          <b>Ambasing Elementary School</b><br>
+          2016–2017
+        </span>
+      </div>
+      <div class="edu-box">
+        JUNIOR HIGH SCHOOL
+        <span>
+          <b>Balugan National High School</b><br>
+          2020–2021
+        </span>
+      </div>
+      <div class="edu-box">
+        SENIOR HIGH SCHOOL
+        <span>
+          <b>Sagada National High School</b><br>
+          HUMSS<br>
+          2022–2023
+        </span>
+      </div>
+      <div class="edu-box">
+        COLLEGE
+        <span>
+          <b>University of the Cordilleras</b><br>
+          BSCrim<br>
+          2023–present
+        </span>
+      </div>
+    </div>
+  </section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form action="mailto:aglolochristin@email.com" method="POST" enctype="text/plain" style="text-align: center; margin-bottom: 2rem;">
+    <label for="message">Send me a message:</label><br>
+    <textarea id="message" name="message" rows="6" cols="60" placeholder="Write your message here..." style="margin-top: 0.5rem; padding: 1rem; border-radius: 10px; border: 1px solid #ccc;"></textarea><br><br>
+    <input type="submit" value="Send" style="background-color: #3498db; color: #fff; border: none; padding: 0.7rem 1.5rem; border-radius: 5px; cursor: pointer;" />
+  </form>
+
+  <div style="text-align: center;">
+  <a href="https://facebook.com/tin.tin.9929" target="_blank" title="Facebook">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width:40px; margin: 0 10px;">
+  </a>
+  <a href="https://github.com/aglolotintin" target="_blank" title="GitHub">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width:40px; margin: 0 10px;">
+  </a>
+  <a href="tel:+639464829384" title="Phone">
+    <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone" style="width:40px; margin: 0 10px;">
+  </a>
+  <a href="https://linkedin.com/in/kristinealeo" target="_blank" title="LinkedIn">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" style="width:40px; margin: 0 10px;">
+  </a>
+</div>
+
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Kristine B. Aleo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
